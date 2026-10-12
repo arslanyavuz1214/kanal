@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator Universe</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #070711;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 18px;
+  overflow-x: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: .65;
+  z-index: -1;
+  pointer-events: none;
+  animation: move 9s infinite alternate ease-in-out;
+}
+
+body::before {
+  background: #782cff;
+  top: -100px;
+  left: -80px;
+}
+
+body::after {
+  background: #006aff;
+  bottom: -100px;
+  right: -80px;
+  animation-delay: -4s;
+}
+
+@keyframes move {
+  to { transform: translate(90px, 70px) scale(1.3); }
+}
+
+.container {
+  width: 100%;
+  max-width: 470px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 17px;
+  border: 1px solid #ffffff35;
+  border-radius: 30px;
+  color: #cdb1ff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+}
+
+h1 {
+  font-size: clamp(42px, 12vw, 66px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  background: linear-gradient(90deg, #fff, #bd8bff, #70c9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow-wrap: anywhere;
+}
+
+.subtitle {
+  margin: 15px 0 32px;
+  color: #aaa9c2;
+  line-height: 1.7;
+}
+
+.links {
+  display: grid;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  background: #ffffff0b;
+  border: 1px solid #ffffff25;
+  backdrop-filter: blur(15px);
+  transition: .3s;
+}
+
+.social:hover {
+  transform: translateY(-5px);
+  border-color: #b58aff;
+  box-shadow: 0 0 30px #853cff40;
+  background: #8b35ff20;
+}
+
+.platform {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.username {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #b6b2cc;
+}
+
+.arrow {
+  font-size: 25px;
+  color: #c7a7ff;
+}
+
+footer {
+  margin-top: 30px;
+  color: #77758e;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+
+  <div class="badge">✦ OFFICIAL CREATOR PAGE</div>
+
+  <h1>MY UNIVERSE</h1>
+
+  <p class="subtitle">
+    Welcome to my world.<br>
+    Follow me everywhere.
+  </p>
+
+  <div class="links">
+
+    <!-- Snapchat -->
+    <a class="social"
+       href="https://www.snapchat.com/add/3y3v3z3"
+       target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="platform">👻 Snapchat</div>
+        <div class="username">3y3v3z3</div>
+      </div>
+      <span class="arrow">↗️</span>
+    </a>
+
+    <!-- Instagram -->
+    <a class="social"
+       href="https://www.instagram.com/jawus1234/"
+       target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="platform">Instagram</div>
+        <div class="username">@jawus1234</div>
+      </div>
+      <span class="arrow">↗️</span>
+    </a>
+
+    <!-- X -->
+    <a class="social"
+       href="https://x.com/XXXHALOOXX"
+       target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="platform">𝕏 X</div>
+        <div class="username">@XXXHALOOXX</div>
+      </div>
+      <span class="arrow">↗️</span>
+    </a>
+
+    <!-- Reddit -->
+    <a class="social"
+       href="https://www.reddit.com/user/jawus1234/"
+       target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="platform">Reddit</div>
+        <div class="username">u/jawus1234</div>
+      </div>
+      <span class="arrow">↗️</span>
+    </a>
+
+  </div>
+
+  <footer>CONNECT WITH ME · 2026</footer>
+
+</main>
+</body>
+</html>
